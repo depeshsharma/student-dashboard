@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+.scroll {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.scroll h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.scroll button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+.scroll button:hover {
+    background-color: #555;
+}
+.scroll button.active {
+    background-color: #666;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: none;
+}
+.section.active {
+    display: block;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input, textarea {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+button[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button[type="submit"]:hover {
+    background-color: #555;
+}
+.nav-links {
+    margin-top: auto;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+.nav-links a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.nav-links a:hover {
+    color: white;
+}
